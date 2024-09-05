@@ -1,0 +1,133 @@
+/* Reseta margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configura o plano de fundo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background: 
+        url(kit.jpeg) right top no-repeat;
+    background-size: cover; /* Faz com que a imagem cubra o fundo */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: rgba(248, 248, 248, 0.8); /* Cor de fundo semi-transparente */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Cinzel', sans-serif;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para seções */
+section {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima para dispositivos grandes */
+}
+
+/* Estilo dos elementos de entrada e botão */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para os resultados da pesquisa */
+.resultados-pesquisa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.item-resultado {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    width: 300px; /* Largura fixa para itens */
+    text-align: center;
+}
+
+.item-resultado img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 4px;
+}
+
+.descricao-meta {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.result-item {
+    /* Estilos para cada item do resultado */
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
